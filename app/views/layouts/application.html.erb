@@ -35,7 +35,14 @@
       <li><%= link_to "Create Post" , new_post_path %></li>
     </ul>
 
+    <ul class="navbar-nav">
+    <li><%= link_to "Login" , new_user_session_path %></li>
+    <span>|</span>
+    <li><%= link_to "Logout" , destroy_user_session_path , method: :delete %></li>
+    </ul>
   </div>
+
+
 </nav>
 
 <div class="container">

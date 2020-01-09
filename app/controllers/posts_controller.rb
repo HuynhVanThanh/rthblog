@@ -1,11 +1,7 @@
-class UserController < ApplicationController
-    before_action :authenticate_user!
-    # member_signed_in?
-    # current_member
-    # member_session
-  end
-
 class PostsController < ApplicationController
+
+    before_action :authenticate_user! , except:[:index, :show]
+
     def index
         @post = Post.all
     end
