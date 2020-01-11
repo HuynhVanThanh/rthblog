@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  mount RetrievePost::Post => '/api.v1'
+  mount PostsAPI => '/'
 
   # root "static_pages#home"
   devise_for :users
