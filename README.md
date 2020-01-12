@@ -1,24 +1,38 @@
-# README
+# RTHBlog
+This is a simple blog builded on  Ruby on Rails .You can log in/log out, create new blog post and post comments.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Install
+* You can get source code from Github:
+    $ git clone https://github.com/HuynhVanThanh/rthblog
 
-Things you may want to cover:
+* Setup
 
-* Ruby version
+    $ rvm install 2.5.1
 
-* System dependencies
+    $ gem install bundler
 
-* Configuration
+    $ gem install rails –v 5.2.3
 
-* Database creation
+    $ sudo service postgresql start 
 
-* Database initialization
+    $ sudo -i -u postgres
 
-* How to run the test suite
+    $ createuser --interactive
 
-* Services (job queues, cache servers, search engines, etc.)
+* Run
 
-* Deployment instructions
+    $ sudo service postgresql start 
+    
+    $ cd rth-blog
 
-* ...
+    $ rails s
+
+# API 
+* You can get API for retrieve posts: /api/v1/posts
+
+# Deployment on Heroku
+* You can visit website at: https://rthblog-rails.herokuapp.com/
+
+# Author
+* Huynh Van Thanh
+* Github: https://github.com/HuynhVanThanh

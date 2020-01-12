@@ -2,6 +2,12 @@ require_relative 'boot'
 
 require 'rails/all'
 
+require 'sprockets/rails/task'
+Sprockets::Rails::Task.new(Rails.application) do |t|
+  t.environment = lambda { Rails.application.assets }
+  t.assets = %w( application.js application.css )
+  t.keep = 5
+end
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)

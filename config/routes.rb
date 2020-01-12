@@ -14,4 +14,11 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
+
+  concern :paginatable do
+    get '(page/:page)', action: :index, on: :collection, as: 'page'
+  end
+
+  resources :posts, concerns: :paginatable
+
 end
