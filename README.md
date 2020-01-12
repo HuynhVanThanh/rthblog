@@ -36,3 +36,4 @@ This is a simple blog builded on  Ruby on Rails .You can log in/log out, create 
 # Author
 * Huynh Van Thanh
 * Github: https://github.com/HuynhVanThanh
+
